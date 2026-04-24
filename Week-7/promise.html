@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Example</title>
+</head>
+<body>
+    <h2>Promise Demo</h2>
+    <button onclick="runPromise()">Run Promise</button>
+    <p id="output"></p>
+    <script>
+        function runPromise() {
+            let myPromise= new Promise((resolve,reject)=>{
+                let success=false;     // Task Failed. If it is true Task is completed.
+                setTimeout(function(){
+                    if(success){
+                        resolve("Task is completed");
+                    }else{
+                        reject("Task failed");
+                    }
+                },2000);
+            });
+            myPromise.then(function(result){
+                document.getElementById("output").innerText=result;
+            }).catch(function(error){
+                document.getElementById("output").innerText=error;
+            });
+        }
+    </script>
+</body>
+</html>
