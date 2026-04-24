@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changer</title>
+</head>
+<body>
+    <input type="text" id="inputtext">
+    <button onclick="saveData()">Save</button>
+    <button onclick="loadData()">Load</button>
+    <p id="saveData"></p>
+
+    <script>
+        function saveData() {
+            localStorage.setItem("text", document.getElementById("inputtext").value);
+        }
+        function loadData() {
+            document.getElementById("saveData").innerText = localStorage.getItem("text");
+        }
+    </script>
+</body>
+</html>

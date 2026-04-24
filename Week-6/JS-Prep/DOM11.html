@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Append of list items</title>
+</head>
+<body>
+    <p id="timer">20</p>
+    
+    <script>
+        let count=20;
+        let interval=setInterval(()=>{
+            document.getElementById("timer").innerHTML=count;
+            count--;
+            if(count<0) clearInterval(interval);
+        },1000);
+    </script>
+</body>
+</html>

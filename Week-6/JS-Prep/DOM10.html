@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Append of list items</title>
+</head>
+<body>
+    <button onclick="fetchData()">Get Data</button>
+    <p id="output"></p>
+    
+    <script>
+        function fetchData() {
+            fetch('https://jsonplaceholder.typicode.com/posts/1')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("output").innerText = data.title;
+                });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Append of list items</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" style="width: 250px; height: 250px; background-color: rgb(255, 69, 162);"></div>
+    <button onclick="toggleBox()">Toggle</button>
+    
+    <script>
+        function toggleBox() {
+            let box = document.getElementById("box");
+            box.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

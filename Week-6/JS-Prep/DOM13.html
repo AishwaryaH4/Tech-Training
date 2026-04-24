@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changer</title>
+</head>
+<body>
+    <img id="slider" src="wp2708184-wallpaper-4k-resolution.jpg" alt="" width="300">
+    <button onclick="nextImage()">Next</button>
+    <script>
+        let images = ["wp2708378-wallpaper-4k-resolution.jpg", "wp2708188-wallpaper-4k-resolution.jpg", "uwp5003225.jpeg"];
+        let index = 0;
+        function nextImage() {
+            index = (index + 1) % images.length;
+            document.getElementById("slider").src = images[index];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Tags</title>
+</head>
+<body>
+    <h2>Fibonacci Series</h2>
+    <script>
+        let a=0;
+        let b=1;
+        
+        function fib(){
+        let n=Number(prompt("Enter the value of n:"));
+        if(n<=0){
+            console.log("Enter valid number");
+            return;
+        }
+        let output="";
+        for(let i=0;i<n;i++){
+            output+=a+" ";
+            let c=a+b;
+            a=b;
+            b=c;
+        }
+        document.write(output);
+        }
+        fib();
+    </script>
+</body>
+</html>

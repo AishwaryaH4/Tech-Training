@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Append of list items</title>
+</head>
+<body>
+    <ul id="list"></ul>
+    <button onclick="addListItem()">Add List Item</button>
+
+    <script>
+        function addListItem() {
+            let list = document.createElement("li");
+            list.innerText = "New List Item";
+            document.getElementById("list").appendChild(list);
+        }
+    </script>
+</body>
+</html>
