@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Skool DashBoard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <!--side Bar-->
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo-box"><i class="fa-solid fa-globe"></i></div>
+            <h2>E-Skool</h2>
+        </div>
+        <ul class="menu">
+            <li class="active"><i class="fa-solid fa-home"></i>Home</li>
+            <li><i class="fa fa-chart-bar"></i>My Results</li>
+            <li><i class="fa fa-file"></i>Submission</li>
+            <li><i class="fa fa-book"></i>Tutorials</li>
+            <li><i class="fa fa-users"></i>PTA Meetings</li>
+            <li><i class="fa fa-cog"></i>Settings</li>
+        </ul>
+        <div class="semester">
+            <p>Semester 2 of 3</p>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!--Search-->
+        <div class="topbar">
+            <input type="text" placeholder="what do you wanna search?">
+        </div>
+        <!--Profiles-->
+        <div class="profile-card">
+            <div class="profile-text">
+            <h2>Welcome Back.....</h2>
+            <p><b>Aish,</b>You have completed 75% of tasks</p>
+            <button>Set Goals</button>
+        </div>
+            <img src="Screenshot 2026-03-14 122902.png" alt="Profile">
+          </div>
+          <!--Assignments-->
+          <div class="section">
+            <h3> Your Assignments</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>Java Programming</h4>
+                    <p>Questions and Answers</p>
+                </div>
+                <div class="card">
+                    <h4>DSA</h4>
+                    <p>Problem Solving</p>
+                </div>
+                <div class="card">
+                    <h4>Java FullStack</h4>
+                    <p>Just started....</p>
+                </div>
+
+            </div>
+          </div>
+          <!--Lessons-->
+          <div class="section">
+            <h3>Lessons For you</h3>
+            <div class="lessons">
+                <div class="lesson yellow">
+                    <h4>Java Programming</h4>
+                    <p>Questions and Answers</p>
+                    
+                </div>
+                <div class="lesson red">
+                    <h4>Workshops</h4>
+                    <p>Activities</p>
+                    
+                </div>
+            </div>
+<div class="section weekly-analytics">
+    <h3>Weekly Progress</h3>
+
+
+    <div class="wa-layout">
+        <!-- Graph -->
+        <div class="wa-graph-card">
+            <p class="wa-subtitle">Daily Completion</p>
+            <img class="wa-line-graph" src="line_graph.png" alt="Daily Completion Line Graph">
+        </div>
+        
+        <!-- Beside graph -->
+        <div class="wa-stats">
+            <div class="wa-card">
+                <p class="wa-label">Time Spent</p>
+                <h4>18h 40m</h4>
+                <small>+2h 15m from last week</small>
+            </div>
+
+            <div class="wa-card wa-overall">
+                <p class="wa-label">Overall Progress</p>
+                <div class="wa-ring" style="--value: 76;">
+                    <span>76%</span>
+                </div>
+                <small>Target: 85%</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+          </div>
+    </div>
+
+    
+
+    <!--Right Side-->
+    <div class="right">
+        <div class="calender">
+            <div class="cal-header">
+                <span>&lt</span>
+                <h4>April 2026</h4>
+                <span>&gt</span>
+            </div>
+            <div class="weekdays">
+                <span>M</span>
+                <span>T</span>
+                <span>W</span>
+                <span>T</span>
+                <span>F</span>
+                <span>S</span>
+                <span>S</span>
+            </div>
+            <div class="days">
+                <span class="empty"></span>
+                <span class="empty"></span>
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                <span>11</span><span>12</span><span>13</span><span>14</span><span class="active-day">15</span>
+                <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+                <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+            </div>
+        </div>
+        <div class="tasks">
+            <ul>
+                <li><span class="dot orange"></span>Upload Assignment</li>
+                <li><span class="dot green"></span>Study for quiz</li>
+                <li><span class="dot purple"></span>Paragraph Correction</li>
+                <li><span class="dot red"></span>Spell Check English</li>
+            </ul>
+        </div>
+    </div>
+</div> 
+</body>
+</html>
